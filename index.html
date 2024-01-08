@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function display_length() {
+            var count = document.getElementById("form1").length;
+            alert('Thank you, Your Form Is Submitted. ');
+        }
+    </script>
+</head>
+<style>
+    CSS(styles.css): css form {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+</style>
+
+<body background="../bg.jpg">
+
+    <form id="form1" action="welcom.php">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" placeholder="Enter your city">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+
+        <label for="gender">Select Your Gender:</label>
+        <label for="male"> <input type="radio" name="Gender" id="male" required>Male</label>
+        <label for="female"><input type="radio" name="Gender" id="female" required>Female</label>
+
+        <br>
+        <br>
+
+        <input type="button" value="Submit" onclick="display_length()">
+    </form>
+</body>
+
+</html>
